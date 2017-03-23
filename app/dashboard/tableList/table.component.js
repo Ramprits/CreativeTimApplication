@@ -14,7 +14,6 @@ var tableListComponent = (function () {
     }
     tableListComponent = __decorate([
         core_1.Component({
-            selector: 'table-cmp',
             moduleId: module.id,
             templateUrl: 'tableList.component.html'
         }), 

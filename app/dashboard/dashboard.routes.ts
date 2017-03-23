@@ -7,11 +7,12 @@ import { TableComponent } from './table/table.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { TypographyComponent } from './typography/typography.component';
 import { MapsComponent } from './maps/maps.component';
+import { tableListComponent } from "./tableList/table.component";
 
 export const MODULE_ROUTES: Route[] =[
     { path: 'dashboard', component: HomeComponent },
     { path: 'user', component: UserComponent },
-    { path: 'table', component: TableComponent },
+    { path: 'table', component: tableListComponent },
     { path: 'icons', component: IconsComponent },
     { path: 'notifications', component: NotificationsComponent },
     { path: 'typography', component: TypographyComponent },
@@ -22,7 +23,7 @@ export const MODULE_ROUTES: Route[] =[
 export const MODULE_COMPONENTS = [
     HomeComponent,
     UserComponent,
-    TableComponent,
+    tableListComponent,
     IconsComponent,
     NotificationsComponent,
     TypographyComponent,

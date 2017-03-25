@@ -16,7 +16,7 @@ export class OrderService {
      GetOrders(): Observable<IOrder[]> {
           return this._http.get(this.baseURL)
                .map((response: Response) => <IOrder[]>response.json())
-               .do(data => console.log('All :' + JSON.stringify(data))).catch(this.handleError);
+               // .do(data => console.log('All :' + JSON.stringify(data))).catch(this.handleError);
      }
      private handleError(error: Response) {
           console.error(error);

@@ -21,8 +21,8 @@ var OrderService = (function () {
     }
     OrderService.prototype.GetOrders = function () {
         return this._http.get(this.baseURL)
-            .map(function (response) { return response.json(); })
-            .do(function (data) { return console.log('All :' + JSON.stringify(data)); }).catch(this.handleError);
+            .map(function (response) { return response.json(); });
+        // .do(data => console.log('All :' + JSON.stringify(data))).catch(this.handleError);
     };
     OrderService.prototype.handleError = function (error) {
         console.error(error);

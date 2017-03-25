@@ -11,12 +11,15 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { FooterModule } from './shared/footer/footer.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, CommonModule } from '@angular/common';
+import { OrderService } from "./dashboard/order/order.service";
 
 @NgModule({
     imports: [
+        CommonModule,
         BrowserModule,
         DashboardModule,
+        HttpModule,
         SidebarModule,
         NavbarModule,
         FooterModule,
